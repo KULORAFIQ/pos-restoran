@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Menu</title>
+  <link rel="stylesheet" href="stylee_admin.css" />
+</head>
+<body>
+  <div class="login-container" id="loginSection">
+    <h2>Login Admin</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p id="loginError"></p>
+  </div>
+
+  <div class="admin-container hidden" id="adminSection">
+    <h1>Manajemen Menu</h1>
+
+    <div class="form-section">
+      <input type="text" id="menuName" placeholder="Nama Menu">
+      <input type="number" id="menuPrice" placeholder="Harga">
+      <input type="text" id="menuImage" placeholder="URL Gambar (opsional)">
+      <button onclick="addMenu()">Tambah Menu</button>
+    </div>
+
+    <table id="menuTable">
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>Harga</th>
+          <th>Gambar</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <button onclick="logout()" class="logout-btn">Logout</button>
+  </div>
+
+  <script src="script_admin.js"></script>
+</body>
+</html>

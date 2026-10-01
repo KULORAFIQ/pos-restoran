@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/b67e368fa6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./stylee_pesan.css">
+  <title>Restaurant Menu</title>
+  <link rel="icon" href="assets/img/logo/Hotel Branding.png" type="image/x-icon">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <img src="./assets/img/logo/Hotel Branding.png" alt="">
+    <ul>
+      <li><a href="./index.html">Daftar Menu</a></li>
+      <li><a href="./index_Pesan.html">Pesan Menu</a></li>
+      <li><a href="./tentang_kami.html">Hubungi Kami</a></li>
+      <li><a href="./admin_menu.html">login</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <div id="foodList"></div>
+    <div class="content" id="foodList"></div>
+  </div>
+
+  <!-- Tombol untuk membuka cart -->
+<button class="cart-toggle-btn" id="viewCartBtn">
+    <i class="fas fa-shopping-cart"></i> Lihat Pesanan Anda
+  </button>
+  
+  <!-- Cart muncul dari bawah -->
+  <div class="cart-container" id="cartContainer">
+    <div class="cart-header">
+      <h2>Pesanan Anda</h2>
+      <button class="close-cart" id="closeCartBtn"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-content" id="cartList">
+      <!-- item pesanan muncul di sini -->
+    </div>
+    <div class="cart-footer">
+      <button class="order-btn">ORDER SEKARANG</button>
+    </div>
+  </div>
+  
+
+  <script src="./scrript_pesan.js"></script>
+  <script>
+   
+  </script>
+</body>
+</html>
